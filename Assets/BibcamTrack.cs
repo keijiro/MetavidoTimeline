@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
-using Bibcam.Decoder;
 
 namespace Bibcam.Timeline {
 
@@ -19,12 +18,6 @@ public class BibcamTrack : TrackAsset
         if (camera == null) return;
         driver.AddFromName(camera.transform, "m_LocalPosition");
         driver.AddFromName(camera.transform, "m_LocalRotation");
-
-        var decoder = camera.GetComponent<BibcamMetadataDecoder>();
-        var demuxer = camera.GetComponent<BibcamTextureDemuxer>();
-        if (decoder == null || demuxer == null)
-            Debug.LogWarning("Bibcam Track requires Metadata Decoder and" +
-                             " Texture Demuxer attached to the camera.");
     }
 
     #endregion
