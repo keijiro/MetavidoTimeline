@@ -15,13 +15,18 @@ public class BibcamPlayable : PlayableBehaviour
 
     #region PlayableBehaviour overrides
 
+    public override void PrepareFrame
+      (Playable playable, FrameData info)
+    {
+        Source.SetTime(playable.GetTime());
+        Source.UpdateNow();
+    }
+
     public override void ProcessFrame
       (Playable playable, FrameData info, object playerData)
     {
         var camera = playerData as Camera;
         if (camera == null) return;
-
-        Source.SetTime(playable.GetTime());
 
         var decoder = camera.GetComponent<BibcamMetadataDecoder>();
         var demuxer = camera.GetComponent<BibcamTextureDemuxer>();

@@ -37,10 +37,10 @@ MonoBehaviour:
   m_Clips:
   - m_Version: 1
     m_Start: 0
-    m_ClipIn: 0.75
+    m_ClipIn: 0
     m_Asset: {fileID: 865025615306883032}
-    m_Duration: 5
-    m_TimeScale: 0.6333333333333333
+    m_Duration: 3.1666666666666665
+    m_TimeScale: 1
     m_ParentTrack: {fileID: -6327974357600188579}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
@@ -105,8 +105,8 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: BibcamClip
   - m_Version: 1
-    m_Start: 5
-    m_ClipIn: 100
+    m_Start: 3.1666666666666665
+    m_ClipIn: 0
     m_Asset: {fileID: -6346585474760183857}
     m_Duration: 5
     m_TimeScale: 1

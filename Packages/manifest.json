@@ -11,6 +11,6 @@
   "dependencies": {
     "com.unity.timeline": "1.6.3",
     "jp.keijiro.bibcam": "file:../../Bibcam/Packages/jp.keijiro.bibcam",
-    "jp.keijiro.klak.hap": "0.1.19"
+    "jp.keijiro.klak.hap": "file:../../KlakHap/Packages/jp.keijiro.klak.hap"
   }
 }
