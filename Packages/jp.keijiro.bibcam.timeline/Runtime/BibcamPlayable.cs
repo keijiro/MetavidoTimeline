@@ -56,6 +56,8 @@ public class BibcamPlayable : PlayableBehaviour
 
         camera.transform.localPosition = meta.CameraPosition;
         camera.transform.localRotation = meta.CameraRotation;
+
+        camera.ResetProjectionMatrix();
         camera.projectionMatrix =
           meta.ReconstructProjectionMatrix(camera.projectionMatrix);
     }
