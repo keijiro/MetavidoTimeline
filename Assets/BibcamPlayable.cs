@@ -5,14 +5,14 @@ using Bibcam.Decoder;
 
 namespace Bibcam.Timeline {
 
-public class BibcamPlayableBehaviour : PlayableBehaviour
+public class BibcamPlayable : PlayableBehaviour
 {
     #region Public members
 
     public static Playable CreatePlayable
       (PlayableGraph graph, string filePath, HapPlayer.PathMode pathMode)
     {
-        var playable = ScriptPlayable<BibcamPlayableBehaviour>.Create(graph);
+        var playable = ScriptPlayable<BibcamPlayable>.Create(graph);
         var behaviour = playable.GetBehaviour();
         behaviour._source = PlayerFactory.Create(filePath, pathMode);
         return playable;
@@ -27,6 +27,12 @@ public class BibcamPlayableBehaviour : PlayableBehaviour
     #endregion
 
     #region PlayableBehaviour overrides
+
+    public override void OnBehaviourPause(Playable playable, FrameData info)
+      => _source.gameObject.SetActive(false);
+
+    public override void OnBehaviourPlay(Playable playable, FrameData info)
+      => _source.gameObject.SetActive(true);
 
     public override void PrepareFrame(Playable playable, FrameData info)
     {

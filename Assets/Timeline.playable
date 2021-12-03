@@ -1,19 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6346585474760183857
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94b2eb4f980a444f7b4bc12f23c90141, type: 3}
-  m_Name: BibcamClip(Clone)
-  m_EditorClassIdentifier: 
-  pathMode: 1
-  filePath: Test.mov
 --- !u!114 &-6327974357600188579
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -36,10 +22,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0
+    m_Start: 2.783333333333333
     m_ClipIn: 0
-    m_Asset: {fileID: 865025615306883032}
-    m_Duration: 3.1666666666666665
+    m_Asset: {fileID: 2463521573153887598}
+    m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -6327974357600188579}
     m_EaseInDuration: 0
@@ -105,9 +91,9 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: BibcamClip
   - m_Version: 1
-    m_Start: 3.1666666666666665
+    m_Start: 9.516666666666667
     m_ClipIn: 0
-    m_Asset: {fileID: -6346585474760183857}
+    m_Asset: {fileID: 3432175816590117118}
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -6327974357600188579}
@@ -196,7 +182,7 @@ MonoBehaviour:
     m_ScenePreview: 1
   m_DurationMode: 0
   m_MarkerTrack: {fileID: 0}
---- !u!114 &865025615306883032
+--- !u!114 &2463521573153887598
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,5 +194,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b2eb4f980a444f7b4bc12f23c90141, type: 3}
   m_Name: BibcamClip
   m_EditorClassIdentifier: 
-  pathMode: 1
   filePath: Test.mov
+  pathMode: 1
+--- !u!114 &3432175816590117118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b2eb4f980a444f7b4bc12f23c90141, type: 3}
+  m_Name: BibcamClip
+  m_EditorClassIdentifier: 
+  filePath: Test.mov
+  pathMode: 1

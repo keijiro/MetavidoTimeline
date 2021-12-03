@@ -10,7 +10,7 @@ public class BibcamClip : PlayableAsset, ITimelineClipAsset
 {
     #region Editable attributes
 
-    public string filePath;
+    public string filePath = "";
     public HapPlayer.PathMode pathMode;
 
     #endregion
@@ -24,7 +24,7 @@ public class BibcamClip : PlayableAsset, ITimelineClipAsset
     #region PlayableAsset overrides
 
     public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
-      => BibcamPlayableBehaviour.CreatePlayable(graph, filePath, pathMode);
+      => BibcamPlayable.CreatePlayable(graph, filePath, pathMode);
 
     #endregion
 }
