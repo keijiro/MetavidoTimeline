@@ -3,14 +3,8 @@
     {
       "name": "Keijiro",
       "url": "https://registry.npmjs.com",
-      "scopes": [
-        "jp.keijiro"
-      ]
+      "scopes": [ "jp.keijiro" ]
     }
   ],
-  "dependencies": {
-    "com.unity.timeline": "1.6.3",
-    "jp.keijiro.bibcam": "file:../../Bibcam/Packages/jp.keijiro.bibcam",
-    "jp.keijiro.klak.hap": "file:../../KlakHap/Packages/jp.keijiro.klak.hap"
-  }
+  "dependencies": { }
 }

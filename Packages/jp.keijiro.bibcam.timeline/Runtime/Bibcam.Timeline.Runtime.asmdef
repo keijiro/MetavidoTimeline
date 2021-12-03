@@ -1,0 +1,19 @@
+{
+    "name": "Bibcam.Timeline.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f06555f75b070af458a003d92f9efb00",
+        "GUID:63ee2b3a69c095740bf1e4ff4d11f294",
+        "GUID:b5f587414423d4dc59cf0a18bf95250a",
+        "GUID:1d13b6103cd1e4c66a76babde2f48804"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

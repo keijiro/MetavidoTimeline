@@ -2,7 +2,7 @@
   "dependencies": {
     "com.unity.timeline": {
       "version": "1.6.3",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.director": "1.0.0",
@@ -13,32 +13,44 @@
       "url": "https://packages.unity.com"
     },
     "jp.keijiro.bibcam": {
-      "version": "file:../../Bibcam/Packages/jp.keijiro.bibcam",
+      "version": "2.0.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
+    "jp.keijiro.bibcam.timeline": {
+      "version": "file:jp.keijiro.bibcam.timeline",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.timeline": "1.6.3",
+        "jp.keijiro.bibcam": "2.0.4",
+        "jp.keijiro.klak.hap": "0.1.20"
+      }
     },
     "jp.keijiro.klak.hap": {
-      "version": "file:../../KlakHap/Packages/jp.keijiro.klak.hap",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "version": "0.1.20",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
     },
     "com.unity.modules.animation": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.audio": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     },
     "com.unity.modules.director": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {
         "com.unity.modules.audio": "1.0.0",
@@ -47,7 +59,7 @@
     },
     "com.unity.modules.particlesystem": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     }
