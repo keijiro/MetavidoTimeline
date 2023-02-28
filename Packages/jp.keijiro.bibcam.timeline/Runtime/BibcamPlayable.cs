@@ -53,7 +53,7 @@ public class BibcamPlayable : PlayableBehaviour
         var xform = camera.transform;
 
         // Bibcam decoding
-        decoder.Decode(_source.targetTexture);
+        decoder.DecodeSync(_source.targetTexture);
         demuxer.Demux(_source.targetTexture, decoder.Metadata);
 
         // Metadata validity check

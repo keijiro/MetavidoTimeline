@@ -1,8 +1,8 @@
 {
     "author": "Keijiro Takahashi",
     "dependencies": {
-        "com.unity.timeline": "1.6.3",
-        "jp.keijiro.bibcam": "2.0.5",
+        "com.unity.timeline": "1.6.4",
+        "jp.keijiro.bibcam": "3.1.0",
         "jp.keijiro.klak.hap": "0.1.20"
     },
     "description": "Timeline extensions for Bibcam",
@@ -10,7 +10,7 @@
     "keywords": [ "unity" ],
     "license": "Unlicense",
     "name": "jp.keijiro.bibcam.timeline",
-    "unity": "2021.2",
+    "unity": "2021.3",
     "unityRelease": "0f1",
-    "version": "1.0.2"
+    "version": "2.0.0"
 }
