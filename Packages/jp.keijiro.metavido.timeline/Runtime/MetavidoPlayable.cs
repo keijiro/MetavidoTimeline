@@ -1,18 +1,18 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using Klak.Hap;
-using Bibcam.Decoder;
+using Metavido.Decoder;
 
-namespace Bibcam.Timeline {
+namespace Metavido.Timeline {
 
-public class BibcamPlayable : PlayableBehaviour
+public class MetavidoPlayable : PlayableBehaviour
 {
     #region Public members
 
     public static Playable CreatePlayable
       (PlayableGraph graph, string filePath, HapPlayer.PathMode pathMode)
     {
-        var playable = ScriptPlayable<BibcamPlayable>.Create(graph);
+        var playable = ScriptPlayable<MetavidoPlayable>.Create(graph);
         var behaviour = playable.GetBehaviour();
         behaviour._source = PlayerFactory.Create(filePath, pathMode);
         return playable;
@@ -47,12 +47,12 @@ public class BibcamPlayable : PlayableBehaviour
     {
         // Scene objects
         var camera = playerData as Camera;
-        var decoder = camera.GetComponent<BibcamMetadataDecoder>();
-        var demuxer = camera.GetComponent<BibcamTextureDemuxer>();
+        var decoder = camera.GetComponent<MetadataDecoder>();
+        var demuxer = camera.GetComponent<TextureDemuxer>();
         if (camera == null || decoder == null || demuxer == null) return;
         var xform = camera.transform;
 
-        // Bibcam decoding
+        // Metavido decoding
         decoder.DecodeSync(_source.targetTexture);
         demuxer.Demux(_source.targetTexture, decoder.Metadata);
 
@@ -100,4 +100,4 @@ public class BibcamPlayable : PlayableBehaviour
     #endregion
 }
 
-} // namespace Bibcam.Timeline
+} // namespace Metavido.Timeline

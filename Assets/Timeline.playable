@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75b69abc87b774368a3bf9371ee4fe06, type: 3}
-  m_Name: Bibcam Track
+  m_Name: Metavido Track
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -89,7 +89,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: BibcamClip
+    m_DisplayName: MetavidoClip
   - m_Version: 1
     m_Start: 2
     m_ClipIn: 8
@@ -158,7 +158,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: BibcamClip
+    m_DisplayName: MetavidoClip
   m_Markers:
     m_Objects: []
 --- !u!114 &11400000
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94b2eb4f980a444f7b4bc12f23c90141, type: 3}
-  m_Name: BibcamClip
+  m_Name: MetavidoClip
   m_EditorClassIdentifier: 
   filePath: Test.mov
   pathMode: 1
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94b2eb4f980a444f7b4bc12f23c90141, type: 3}
-  m_Name: BibcamClip
+  m_Name: MetavidoClip
   m_EditorClassIdentifier: 
   filePath: Test.mov
   pathMode: 1

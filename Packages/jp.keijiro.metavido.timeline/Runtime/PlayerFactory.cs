@@ -1,14 +1,14 @@
 using UnityEngine;
 using Klak.Hap;
 
-namespace Bibcam.Timeline {
+namespace Metavido.Timeline {
 
 public static class PlayerFactory
 {
     public static HapPlayer Create
       (string filePath, HapPlayer.PathMode pathMode)
     {
-        var go = new GameObject("[Not Saved] HAP Player for Bibcam");
+        var go = new GameObject("[Not Saved] HAP Player for Metavido");
         go.hideFlags = HideFlags.DontSave;
 
         var hap = go.AddComponent<HapPlayer>();
@@ -32,4 +32,4 @@ public static class PlayerFactory
     }
 }
 
-} // namespace Bibcam.Timeline
+} // namespace Metavido.Timeline

@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
-namespace Bibcam.Timeline {
+namespace Metavido.Timeline {
 
 [TrackColor(0.1f, 0.6f, 0.5f)]
-[TrackClipType(typeof(BibcamClip))]
+[TrackClipType(typeof(MetavidoClip))]
 [TrackBindingType(typeof(Camera))]
-public class BibcamTrack : TrackAsset
+public class MetavidoTrack : TrackAsset
 {
     #region TrackAsset overrides
 
@@ -23,4 +23,4 @@ public class BibcamTrack : TrackAsset
     #endregion
 }
 
-} // namespace Bibcam.Timeline
+} // namespace Metavido.Timeline

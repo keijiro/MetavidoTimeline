@@ -1,10 +1,10 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Bibcam.Timeline {
+namespace Metavido.Timeline {
 
-[CustomEditor(typeof(BibcamClip)), CanEditMultipleObjects]
-class BibcamClipEditor : Editor
+[CustomEditor(typeof(MetavidoClip)), CanEditMultipleObjects]
+class MetavidoClipEditor : Editor
 {
     SerializedProperty _filePath;
     SerializedProperty _pathMode;
@@ -24,4 +24,4 @@ class BibcamClipEditor : Editor
     }
 }
 
-} // namespace Bibcam.Timeline
+} // namespace Metavido.Timeline

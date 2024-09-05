@@ -3,8 +3,12 @@
     {
       "name": "Keijiro",
       "url": "https://registry.npmjs.com",
-      "scopes": [ "jp.keijiro" ]
+      "scopes": [
+        "jp.keijiro"
+      ]
     }
   ],
-  "dependencies": { }
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "17.0.3"
+  }
 }

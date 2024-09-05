@@ -3,10 +3,10 @@ using UnityEngine.Playables;
 using UnityEngine.Timeline;
 using Klak.Hap;
 
-namespace Bibcam.Timeline {
+namespace Metavido.Timeline {
 
 [System.Serializable]
-public class BibcamClip : PlayableAsset, ITimelineClipAsset
+public class MetavidoClip : PlayableAsset, ITimelineClipAsset
 {
     #region Editable attributes
 
@@ -24,9 +24,9 @@ public class BibcamClip : PlayableAsset, ITimelineClipAsset
     #region PlayableAsset overrides
 
     public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
-      => BibcamPlayable.CreatePlayable(graph, filePath, pathMode);
+      => MetavidoPlayable.CreatePlayable(graph, filePath, pathMode);
 
     #endregion
 }
 
-} // namespace Bibcam.Timeline
+} // namespace Metavido.Timeline
