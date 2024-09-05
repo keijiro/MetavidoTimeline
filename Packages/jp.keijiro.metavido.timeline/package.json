@@ -2,7 +2,7 @@
     "author": "Keijiro Takahashi",
     "dependencies": {
         "com.unity.timeline": "1.6.4",
-        "jp.keijiro.metavido": "5.0.4",
+        "jp.keijiro.metavido": "5.0.5",
         "jp.keijiro.klak.hap": "0.1.20"
     },
     "description": "Timeline extensions for Metavido",
