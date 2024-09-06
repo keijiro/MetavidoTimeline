@@ -47,8 +47,8 @@ public class MetavidoPlayable : PlayableBehaviour
     {
         // Scene objects
         var camera = playerData as Camera;
-        var decoder = camera.GetComponent<MetadataDecoder>();
-        var demuxer = camera.GetComponent<TextureDemuxer>();
+        var decoder = camera?.GetComponent<MetadataDecoder>();
+        var demuxer = camera?.GetComponent<TextureDemuxer>();
         if (camera == null || decoder == null || demuxer == null) return;
         var xform = camera.transform;
 
