@@ -9,6 +9,9 @@ video clip support.
 At the moment, it only supports HAP-encoded Metavido clips. You have to transcode
 video clips into QuickTime .mov files with the HAP codec.
 
+Note that it uses the slow readback method for frame-exact synchronization.
+It's useful for offline rendering but not recommended for realtime use.
+
 [Timeline]: https://docs.unity3d.com/Packages/com.unity.timeline@latest
 [Metavido]: https://github.com/keijiro/Metavido
 [HAP]: https://hap.video
